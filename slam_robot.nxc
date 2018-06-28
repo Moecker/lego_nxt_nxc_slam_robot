@@ -1,0 +1,56 @@
+sub FollowLine()
+{
+  int kSpeed = 0;
+  int kSound = 50;
+  int near_sonar = 50;
+
+  // set sensor type and mode
+  SetSensorType(IN_1, SENSOR_TYPE_TOUCH);
+  SetSensorMode(IN_1, SENSOR_MODE_PULSE);
+  
+  SetSensorLowspeed(IN_2);
+  SetSensorSound(IN_1);
+  bool loop = true;
+  while (loop)
+  {
+    byte sonar_scan = SensorUS(IN_2);
+    
+    if (sonar_scan >= near_sonar)
+    {
+      OnFwd(OUT_A, kSpeed);
+      OnFwd(OUT_C, kSpeed);
+    }
+    else
+    {
+      Off(OUT_A);
+      OnFwd(OUT_C, kSpeed);
+      PlayToneEx(262, 100, 2, false);
+      Wait(100);
+      // RotateMotorEx(OUT_C, 15, 90, 0, false, false);
+    }
+
+    int sound = Sensor(IN_1);
+    if (sound >= kSound)
+    {
+       loop = false;
+    }
+    
+    ClearScreen();
+    TextOut(0, LCD_LINE1, NumToStr(sonar_scan));
+    TextOut(0, LCD_LINE2, NumToStr(sound));
+    Wait(100);
+  }
+  return;
+}
+
+task main()
+{
+   ClearScreen();
+   FollowLine();
+   Off(OUT_AB);
+   
+   ClearScreen();
+   TextOut(0, LCD_LINE1, "Beendet");
+   Wait(500);
+}
+
