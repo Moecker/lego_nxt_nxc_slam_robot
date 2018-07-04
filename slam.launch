@@ -1,0 +1,19 @@
+<launch>
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping">
+    <param name="map_update_interval" value="1.0"/>
+    <param name="maxUrange" value="5.0"/>
+    <param name="xmin" value="-20.0"/>
+    <param name="ymin" value="-20.0"/>
+    <param name="xmax" value="20.0"/>
+    <param name="ymax" value="20.0"/>
+    <param name="delta" value="0.1"/>
+    <param name="maxRange" value="5.0"/>
+    <param name="temporalUpdate" value="1.0"/>
+  </node>
+
+  <node name="slam_visu" pkg="rviz" type="rviz" output="screen" args="-d /home/samo/lego/lego_nxt_nxc_slam_robot/slam.rviz">
+  </node>
+
+  <!-- node pkg="slam" name="slam" type="slam.py" output="screen" / --> 
+
+</launch>
