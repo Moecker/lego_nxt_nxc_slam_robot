@@ -3,9 +3,10 @@
 import math
 
 kTicksPerTurn = 360.0
-kRadius = 0.015
+kDiameter = 0.055
+kRadius = kDiameter / 2.0
 kPi = 3.14159265359
-kAxisDistance = 0.75
+kAxisDistance = 0.113
 
 
 class Pose:
