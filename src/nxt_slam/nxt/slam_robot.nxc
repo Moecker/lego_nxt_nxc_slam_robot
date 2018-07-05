@@ -1,8 +1,8 @@
 sub FollowLine()
 {
-  int kSpeed = 0;
+  int kSpeed = 30;
   int kSound = 50;
-  int near_sonar = 50;
+  int near_sonar = 30;
 
   // set sensor type and mode
   SetSensorType(IN_1, SENSOR_TYPE_TOUCH);
@@ -24,8 +24,7 @@ sub FollowLine()
     {
       Off(OUT_A);
       OnFwd(OUT_C, kSpeed);
-      PlayToneEx(262, 100, 2, false);
-      Wait(100);
+      PlayToneEx(262, 100, 1, false);
       // RotateMotorEx(OUT_C, 15, 90, 0, false, false);
     }
 

@@ -1,0 +1,550 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorSound_inline_FollowLine	6	1	0	4	2
+1	__DU0FollowLine	5	1	4	4	4
+2	__D0SetSensorLowspeed_inline_FollowLine	6	1	8	4	2
+3	__DU0SetSensorSound_inline_FollowLine	5	1	12	4	5
+4	__RLSBmutex1	9	0	16	4	2
+5	__PointOutMutex	9	0	20	4	6
+6	__D0FollowLine	6	1	24	4	25
+7	__SPTArgsMutex	9	0	28	4	2
+8	__DU0SetSensorLowspeed_inline_FollowLine	5	1	32	4	5
+9	__signed_stack_002main	6	1	36	4	2
+10	__signed_stack_001main	6	1	40	4	2
+11	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_FollowLine	5	1	48	4	2
+13	__signed_stack_002FollowLine	6	1	52	4	6
+14	__signed_stack_001FollowLine	6	1	56	4	8
+15	__unsigned_stack_001FollowLine	5	1	60	4	2
+16	__signed_stack_003FollowLine	6	1	64	4	2
+17	__CLSWMutex1	9	0	68	4	2
+18	__TextOutMutex	9	0	72	4	6
+19	__CLSCSMutex1	9	0	76	4	2
+20	__CLSRMutex1	9	0	80	4	2
+21	__FollowLine_7qG2_kSound_7qG2_000	4	1	84	2	2
+22	__FollowLine_7qG2_kSpeed_7qG2_000	4	1	86	2	4
+23	__FollowLine_7qG2_sound_7qG2_001	4	1	88	2	3
+24	__FollowLine_7qG2_near_sonar_7qG2_000	4	1	90	2	2
+25	__constVal200	4	0	92	2	6
+26	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine	1	1	94	1	2
+27	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine	1	1	95	1	2
+28	__SetSensorMode_7qG2_port_7qG2_000_inline_FollowLine	1	1	96	1	2
+29	__SetSensorType_7qG2_type_7qG2_000_inline_FollowLine	1	1	97	1	2
+30	__SetSensorType_7qG2_port_7qG2_000_inline_FollowLine	1	1	98	1	2
+31	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_FollowLine	1	1	99	1	2
+32	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_FollowLine	1	1	100	1	4
+33	__SetSensorMode_7qG2_mode_7qG2_000_inline_FollowLine	1	1	101	1	2
+34	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine	1	1	102	1	2
+35	__constVal96	2	0	103	1	5
+36	__FollowLine_7qG2_sonar_scan_7qG2_001	1	1	104	1	3
+37	__FollowLine_7qG2_loop_7qG2_000	1	1	105	1	3
+38	____initialize_global_data_return	1	1	106	1	3
+39	__constVal32	2	0	107	1	15
+40	__constVal63	2	0	108	1	5
+41	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorSound_inline_FollowLine	1	1	109	1	2
+42	__SetSensorSound_7qG2_bdBScaling_7qG2_000_inline_FollowLine	1	1	110	1	2
+43	__SetSensorSound_7qG2_port_7qG2_000_inline_FollowLine	1	1	111	1	4
+44	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine	1	1	112	1	2
+45	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorSound_inline_FollowLine	1	1	113	1	2
+46	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorSound_inline_FollowLine	1	1	114	1	2
+47	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorSound_inline_FollowLine	1	1	115	1	2
+48	__RLSBIterations1	1	1	116	1	4
+49	__constVal2	2	0	117	1	2
+50	__LSWriteOptions1	1	1	118	1	1
+51	____ReadLSBytes1_return	1	1	119	1	3
+52	__RLSBResult1	2	1	120	1	7
+53	__RLSBytesCount1	1	1	121	1	7
+54	____ResetSensorSubroutine_return	1	1	122	1	4
+55	__constVal3	2	0	123	1	5
+56	__ResetSensorPort	1	1	124	1	4
+57	__ResetSensorTmp	1	1	125	1	2
+58	__constVal1	2	0	126	1	8
+59	__FollowLine_return	1	1	127	1	4
+60	__constVal0	2	1	128	1	21
+61	__TextOutArgs	8	0	4	16	17
+62	__TextOutArgs.Result	2	1	132	1	17
+63	__TextOutArgs.Location	8	0	2	4	17
+64	__TextOutArgs.Location.X	4	1	136	2	17
+65	__TextOutArgs.Location.Y	4	1	138	2	17
+66	__TextOutArgs.Text	7	0	140	4	17
+67	__TextOutArgs.Text.Text_type	1	0	0	1	0
+68	__TextOutArgs.Options	5	1	144	4	17
+69	__SPTArgs	8	0	5	8	6
+70	__SPTArgs.Result	2	1	148	1	6
+71	__SPTArgs.Frequency	3	1	150	2	6
+72	__SPTArgs.Duration	3	1	152	2	6
+73	__SPTArgs.Loop	1	1	154	1	6
+74	__SPTArgs.Volume	1	1	155	1	6
+75	__CLSCSArgs1	8	0	3	4	4
+76	__CLSCSArgs1.Result	2	1	156	1	4
+77	__CLSCSArgs1.Port	1	1	157	1	4
+78	__CLSCSArgs1.BytesReady	1	1	158	1	4
+79	__CLSWArgs1	8	0	4	12	5
+80	__CLSWArgs1.Result	2	1	160	1	5
+81	__CLSWArgs1.Port	1	1	161	1	5
+82	__CLSWArgs1.Buffer	7	0	162	4	5
+83	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+84	__CLSWArgs1.ReturnLen	1	1	164	1	5
+85	__CLSRArgs1	8	0	4	12	5
+86	__CLSRArgs1.Result	2	1	168	1	5
+87	__CLSRArgs1.Port	1	1	169	1	5
+88	__CLSRArgs1.Buffer	7	0	170	4	5
+89	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+90	__CLSRArgs1.BufferLen	1	1	172	1	5
+91	__PointOutArgs	8	0	3	12	12
+92	__PointOutArgs.Result	2	1	176	1	12
+93	__PointOutArgs.Location	8	0	2	4	12
+94	__PointOutArgs.Location.X	4	1	180	2	12
+95	__PointOutArgs.Location.Y	4	1	182	2	12
+96	__PointOutArgs.Options	5	1	184	4	12
+97	__RLSBbufLSWrite1	7	0	188	4	1
+98	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+99	__constStr0009	7	0	190	4	1
+100	__constStr0009.__constStr0009_type	1	1	0	1	0
+101	__OUT_AB	7	0	192	4	1
+102	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+103	__strretvalFollowLine	7	0	194	4	4
+104	__strretvalFollowLine.__strretvalFollowLine_type	1	0	0	1	0
+105	__strbufmain	7	0	196	4	2
+106	__strbufmain.__strbufmain_type	1	0	0	1	0
+107	__strbufFollowLine	7	0	198	4	4
+108	__strbufFollowLine.__strbufFollowLine_type	1	0	0	1	0
+109	__RLSLastGoodRead1	7	0	200	4	2
+110	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+111	__RLSReadBuf1	7	0	202	4	8
+112	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	46	0	#line 46 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	47	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	46	2	#line 46 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	6678	2	#line 6678 "NXCDefs.h"
+0	6679	2	#pragma macro 6
+0	6679	2		acquire __PointOutMutex
+0	6679	3		mov __PointOutArgs.Location.X, __constVal200
+0	6679	5		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	7		mov __PointOutArgs.Options, __constVal1
+0	6679	9		syscall 14, __PointOutArgs
+0	6679	12		release __PointOutMutex
+0	6911	13	#line 6911 "NXCDefs.h"
+0	6678	13	#line 6678 "NXCDefs.h"
+0	47	13	#line 47 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	48	13	#line 48 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	49	13		subcall FollowLine, __FollowLine_return
+0	48	15	#line 48 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	50	15	#line 50 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	51	15	#pragma macro 7
+0	51	15		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6918	38	#line 6918 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	50	38	#line 50 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	6678	38	#line 6678 "NXCDefs.h"
+0	6679	38	#pragma macro 6
+0	6679	38		acquire __PointOutMutex
+0	6679	39		mov __PointOutArgs.Location.X, __constVal200
+0	6679	41		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	43		mov __PointOutArgs.Options, __constVal1
+0	6679	45		syscall 14, __PointOutArgs
+0	6679	48		release __PointOutMutex
+0	6921	49	#line 6921 "NXCDefs.h"
+0	6678	49	#line 6678 "NXCDefs.h"
+0	51	49	#line 51 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	51	49	#line 51 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	52	49		set __signed_stack_001main, 0
+0	51	52	#line 51 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	51	52	#line 51 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	52	52		set __signed_stack_002main, 56
+0	51	55	#line 51 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	51	55	#line 51 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	52	55		strcat __strbufmain, __constStr0009
+0	52	59	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	59		acquire __TextOutMutex
+0	52	60	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	60		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	52	62	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	62		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	52	64	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	64		set __TextOutArgs.Options, 0
+0	52	67	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	67		mov __TextOutArgs.Text, __strbufmain
+0	52	69	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	69		syscall 13, __TextOutArgs
+0	52	72	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	52	72	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	72		release __TextOutMutex
+0	52	73	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	52	73	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	53	73		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	52	76	#line 52 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	8551	76	#line 8551 "NXCDefs.h"
+0	8552	76		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	78	#line 8551 "NXCDefs.h"
+0	53	78	#line 53 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+0	54	78		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6319	0	#pragma macro 25
+2	6319	0		acquire __CLSWMutex1
+2	6319	1		or __CLSWArgs1.Port, __constVal1, __LSWriteOptions1
+2	6319	5		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+2	6319	7		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+2	6319	9		syscall 21, __CLSWArgs1
+2	6319	12		mov __RLSBResult1, __CLSWArgs1.Result
+2	6319	14		release __CLSWMutex1
+2	6319	15	#line 6319 "NXTDefs.h"
+2	6320	15		brtst 5, __RLSBError1, __RLSBResult1
+2	6321	18		set __RLSBIterations1, 60
+2	6323	21	#pragma macro 23
+2	6323	21		acquire __CLSCSMutex1
+2	6323	22		set __CLSCSArgs1.Port, 1
+2	6323	25		syscall 23, __CLSCSArgs1
+2	6323	28		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+2	6323	30		mov __RLSBResult1, __CLSCSArgs1.Result
+2	6323	32		release __CLSCSMutex1
+2	6323	33	#line 6323 "NXTDefs.h"
+2	6324	33		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+2	6325	37		brtst 2, __RLSBError1, __RLSBIterations1
+2	6326	40		brtst 0, __RLSBError1, __RLSBResult1
+2	6327	43		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+2	6329	46		wait 1
+2	6330	48		jmp __RLSBDoCheckStatus1
+2	6332	50		brtst 4, __RLSBReturn1, __RLSBytesCount1
+2	6333	53		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+2	6335	57	#pragma macro 25
+2	6335	57		acquire __CLSRMutex1
+2	6335	58		set __CLSRArgs1.Port, 1
+2	6335	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+2	6335	63		syscall 22, __CLSRArgs1
+2	6335	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+2	6335	68		mov __RLSBResult1, __CLSRArgs1.Result
+2	6335	70		release __CLSRMutex1
+2	6335	71	#line 6335 "NXTDefs.h"
+2	6336	71		brtst 5, __RLSBError1, __RLSBResult1
+2	6337	74		mov __RLSLastGoodRead1, __RLSReadBuf1
+2	6338	76		jmp __RLSBDone1
+2	6340	78		mov __RLSReadBuf1, __RLSLastGoodRead1
+2	6342	80		arrsize __RLSBytesCount1, __RLSReadBuf1
+2	6344	83		subret ____ReadLSBytes1_return
+3	3	0	#line 3 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	4	0		set __FollowLine_7qG2_kSpeed_7qG2_000, 30
+3	3	3	#line 3 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	4	3	#line 4 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	5	3		set __FollowLine_7qG2_kSound_7qG2_000, 50
+3	4	6	#line 4 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	7	6	#line 7 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	8	6		set __FollowLine_7qG2_near_sonar_7qG2_000, 30
+3	7	9	#line 7 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	7	9	#line 7 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	8	9		set __SetSensorType_7qG2_port_7qG2_000_inline_FollowLine, 0
+3	7	12	#line 7 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	7	12	#line 7 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	8	12		set __SetSensorType_7qG2_type_7qG2_000_inline_FollowLine, 1
+3	7	15	#line 7 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	4247	15	#line 4247 "NXCDefs.h"
+3	4248	15		setin __SetSensorType_7qG2_type_7qG2_000_inline_FollowLine, __SetSensorType_7qG2_port_7qG2_000_inline_FollowLine, 0
+3	4247	19	#line 4247 "NXCDefs.h"
+3	8	19	#line 8 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	8	19	#line 8 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	9	19		set __SetSensorMode_7qG2_port_7qG2_000_inline_FollowLine, 0
+3	8	22	#line 8 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	8	22	#line 8 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	9	22		set __SetSensorMode_7qG2_mode_7qG2_000_inline_FollowLine, 96
+3	8	25	#line 8 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	4260	25	#line 4260 "NXCDefs.h"
+3	4261	25		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_FollowLine, __SetSensorMode_7qG2_port_7qG2_000_inline_FollowLine, 1
+3	4260	29	#line 4260 "NXCDefs.h"
+3	10	29	#line 10 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	10	29	#line 10 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	11	29		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_FollowLine, 1
+3	10	32	#line 10 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	11	32	#line 11 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	12	32		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_FollowLine, __constVal1
+3	4342	34	#line 4342 "NXCDefs.h"
+3	4343	34		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_FollowLine
+3	4342	36	#line 4342 "NXCDefs.h"
+3	4342	36	#line 4342 "NXCDefs.h"
+3	4343	36		mov __DU0SetSensorLowspeed_inline_FollowLine, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_FollowLine
+3	4342	38	#line 4342 "NXCDefs.h"
+3	4343	38		tst 5, __D0SetSensorLowspeed_inline_FollowLine, __DU0SetSensorLowspeed_inline_FollowLine
+3	4342	41	#line 4342 "NXCDefs.h"
+3	4343	41		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_FollowLine
+3	4342	44	#line 4342 "NXCDefs.h"
+3	4343	44		set __DU0SetSensorLowspeed_inline_FollowLine, 11
+3	4342	47	#line 4342 "NXCDefs.h"
+3	4342	47	#line 4342 "NXCDefs.h"
+3	4343	47		jmp __004__ASM_Label_37
+3	4342	49	#line 4342 "NXCDefs.h"
+3	4343	49		set __DU0SetSensorLowspeed_inline_FollowLine, 10
+3	4342	52	#line 4342 "NXCDefs.h"
+3	4342	52	#line 4342 "NXCDefs.h"
+3	4343	52		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, __DU0SetSensorLowspeed_inline_FollowLine
+3	4247	54	#line 4247 "NXCDefs.h"
+3	4248	54		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, 0
+3	4247	58	#line 4247 "NXCDefs.h"
+3	4343	58	#line 4343 "NXCDefs.h"
+3	4343	58	#line 4343 "NXCDefs.h"
+3	4344	58		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_FollowLine
+3	4343	60	#line 4343 "NXCDefs.h"
+3	4343	60	#line 4343 "NXCDefs.h"
+3	4344	60		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, 0
+3	4343	63	#line 4343 "NXCDefs.h"
+3	4260	63	#line 4260 "NXCDefs.h"
+3	4261	63		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_FollowLine, 1
+3	4260	67	#line 4260 "NXCDefs.h"
+3	4344	67	#line 4344 "NXCDefs.h"
+3	4344	67	#line 4344 "NXCDefs.h"
+3	4344	67	#line 4344 "NXCDefs.h"
+3	4278	67	#line 4278 "NXCDefs.h"
+3	4279	67	#pragma macro 4
+3	4279	67		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_FollowLine
+3	4279	69		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	6571	71	#line 6571 "NXCDefs.h"
+3	4278	71	#line 4278 "NXCDefs.h"
+3	4345	71	#line 4345 "NXCDefs.h"
+3	11	71	#line 11 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	11	71	#line 11 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	12	71		set __SetSensorSound_7qG2_port_7qG2_000_inline_FollowLine, 0
+3	11	74	#line 11 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	12	74	#line 12 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	13	74		mov __SetSensorSound_7qG2_bdBScaling_7qG2_000_inline_FollowLine, __constVal1
+3	4327	76	#line 4327 "NXCDefs.h"
+3	4328	76		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorSound_inline_FollowLine, __SetSensorSound_7qG2_port_7qG2_000_inline_FollowLine
+3	4327	78	#line 4327 "NXCDefs.h"
+3	4327	78	#line 4327 "NXCDefs.h"
+3	4328	78		mov __DU0SetSensorSound_inline_FollowLine, __SetSensorSound_7qG2_bdBScaling_7qG2_000_inline_FollowLine
+3	4327	80	#line 4327 "NXCDefs.h"
+3	4328	80		tst 5, __D0SetSensorSound_inline_FollowLine, __DU0SetSensorSound_inline_FollowLine
+3	4327	83	#line 4327 "NXCDefs.h"
+3	4328	83		brtst 4, __001__ASM_Label_20, __D0SetSensorSound_inline_FollowLine
+3	4327	86	#line 4327 "NXCDefs.h"
+3	4328	86		set __DU0SetSensorSound_inline_FollowLine, 7
+3	4327	89	#line 4327 "NXCDefs.h"
+3	4327	89	#line 4327 "NXCDefs.h"
+3	4328	89		jmp __001__ASM_Label_21
+3	4327	91	#line 4327 "NXCDefs.h"
+3	4328	91		set __DU0SetSensorSound_inline_FollowLine, 8
+3	4327	94	#line 4327 "NXCDefs.h"
+3	4327	94	#line 4327 "NXCDefs.h"
+3	4328	94		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorSound_inline_FollowLine, __DU0SetSensorSound_inline_FollowLine
+3	4247	96	#line 4247 "NXCDefs.h"
+3	4248	96		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorSound_inline_FollowLine, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorSound_inline_FollowLine, 0
+3	4247	100	#line 4247 "NXCDefs.h"
+3	4328	100	#line 4328 "NXCDefs.h"
+3	4328	100	#line 4328 "NXCDefs.h"
+3	4329	100		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorSound_inline_FollowLine, __SetSensorSound_7qG2_port_7qG2_000_inline_FollowLine
+3	4328	102	#line 4328 "NXCDefs.h"
+3	4328	102	#line 4328 "NXCDefs.h"
+3	4329	102		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorSound_inline_FollowLine, 128
+3	4328	105	#line 4328 "NXCDefs.h"
+3	4260	105	#line 4260 "NXCDefs.h"
+3	4261	105		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorSound_inline_FollowLine, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorSound_inline_FollowLine, 1
+3	4260	109	#line 4260 "NXCDefs.h"
+3	4329	109	#line 4329 "NXCDefs.h"
+3	4329	109	#line 4329 "NXCDefs.h"
+3	4329	109	#line 4329 "NXCDefs.h"
+3	4278	109	#line 4278 "NXCDefs.h"
+3	4279	109	#pragma macro 4
+3	4279	109		mov __ResetSensorPort, __SetSensorSound_7qG2_port_7qG2_000_inline_FollowLine
+3	4279	111		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	6662	113	#line 6662 "NXCDefs.h"
+3	4278	113	#line 4278 "NXCDefs.h"
+3	4330	113	#line 4330 "NXCDefs.h"
+3	12	113	#line 12 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	13	113	#line 13 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	14	113		set __FollowLine_7qG2_loop_7qG2_000, 1
+3	13	116	#line 13 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	14	116	#line 14 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	15	116		mov __DU0FollowLine, __FollowLine_7qG2_loop_7qG2_000
+3	15	118	#line 15 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	16	118		tst 5, __D0FollowLine, __DU0FollowLine
+3	15	121	#line 15 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	16	121		brtst 4, __ASM_Label_625, __D0FollowLine
+3	15	124	#line 15 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	16	124	#pragma macro 26
+3	16	124		acquire __RLSBmutex1
+3	16	125		mov __RLSReadBuf1, __RLSBbufLSWrite1
+3	16	127		set __RLSBytesCount1, 1
+3	16	130		wait 15
+3	16	132		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+3	16	134		index __D0FollowLine, __RLSReadBuf1, 65535
+3	16	138		release __RLSBmutex1
+3	6688	139	#line 6688 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	15	139	#line 15 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	16	139		mov __FollowLine_7qG2_sonar_scan_7qG2_001, __D0FollowLine
+3	17	141	#line 17 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	18	141		mov __unsigned_stack_001FollowLine, __FollowLine_7qG2_sonar_scan_7qG2_001
+3	17	143	#line 17 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	18	143	#line 18 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	19	143		mov __D0FollowLine, __FollowLine_7qG2_near_sonar_7qG2_000
+3	18	145	#line 18 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	19	145		cmp 3, __D0FollowLine, __unsigned_stack_001FollowLine, __D0FollowLine
+3	19	149	#line 19 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	20	149		brtst 4, __ASM_Label_632, __D0FollowLine
+3	19	152	#line 19 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	20	152		mov __D0FollowLine, __FollowLine_7qG2_kSpeed_7qG2_000
+3	20	154	#line 20 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	21	154	#pragma macro 7
+3	21	154		setout __constVal0, 2, __D0FollowLine, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6712	177	#line 6712 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	20	177	#line 20 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	20	177	#line 20 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	21	177		mov __D0FollowLine, __FollowLine_7qG2_kSpeed_7qG2_000
+3	21	179	#line 21 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	22	179	#pragma macro 7
+3	22	179		setout __constVal2, 2, __D0FollowLine, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6719	202	#line 6719 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	21	202	#line 21 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	24	202	#line 24 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	25	202		jmp __ASM_Label_637
+3	25	204	#line 25 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	26	204	#pragma macro 7
+3	26	204		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6725	227	#line 6725 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	25	227	#line 25 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	25	227	#line 25 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	26	227		mov __D0FollowLine, __FollowLine_7qG2_kSpeed_7qG2_000
+3	26	229	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	27	229	#pragma macro 7
+3	27	229		setout __constVal2, 2, __D0FollowLine, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6732	252	#line 6732 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	26	252	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	26	252	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	27	252		set __signed_stack_001FollowLine, 262
+3	26	255	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	26	255	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	27	255		set __signed_stack_002FollowLine, 100
+3	26	258	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	26	258	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	27	258		set __signed_stack_003FollowLine, 1
+3	26	261	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	26	261	#line 26 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	27	261		set __D0FollowLine, 0
+3	28	264	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	264		acquire __SPTArgsMutex
+3	28	265	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	265		mov __SPTArgs.Frequency, __signed_stack_001FollowLine
+3	28	267	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	267		mov __SPTArgs.Duration, __signed_stack_002FollowLine
+3	28	269	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	269		mov __SPTArgs.Volume, __signed_stack_003FollowLine
+3	28	271	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	271		mov __SPTArgs.Loop, __D0FollowLine
+3	28	273	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	273		syscall 10, __SPTArgs
+3	28	276	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	276		mov __D0FollowLine, __SPTArgs.Result
+3	28	278	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	29	278		release __SPTArgsMutex
+3	28	279	#line 28 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	30	279	#line 30 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	30	279	#line 30 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	31	279		getin __FollowLine_7qG2_sound_7qG2_001, __constVal0, 4
+3	30	283	#line 30 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	31	283	#line 31 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	32	283		mov __signed_stack_001FollowLine, __FollowLine_7qG2_sound_7qG2_001
+3	31	285	#line 31 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	32	285	#line 32 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	33	285		mov __D0FollowLine, __FollowLine_7qG2_kSound_7qG2_000
+3	32	287	#line 32 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	33	287		cmp 3, __D0FollowLine, __signed_stack_001FollowLine, __D0FollowLine
+3	33	291	#line 33 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	34	291		brtst 4, __ASM_Label_652, __D0FollowLine
+3	34	294	#line 34 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	35	294		set __FollowLine_7qG2_loop_7qG2_000, 0
+3	34	297	#line 34 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	34	297	#line 34 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	36	297	#line 36 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	6678	297	#line 6678 "NXCDefs.h"
+3	6679	297	#pragma macro 6
+3	6679	297		acquire __PointOutMutex
+3	6679	298		mov __PointOutArgs.Location.X, __constVal200
+3	6679	300		mov __PointOutArgs.Location.Y, __constVal200
+3	6679	302		mov __PointOutArgs.Options, __constVal1
+3	6679	304		syscall 14, __PointOutArgs
+3	6679	307		release __PointOutMutex
+3	6805	308	#line 6805 "NXCDefs.h"
+3	6678	308	#line 6678 "NXCDefs.h"
+3	37	308	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	37	308	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	308		set __signed_stack_001FollowLine, 0
+3	37	311	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	37	311	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	311		set __signed_stack_002FollowLine, 56
+3	37	314	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	37	314	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	314		mov __DU0FollowLine, __FollowLine_7qG2_sonar_scan_7qG2_001
+3	37	316	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	316		numtostr __strretvalFollowLine, __DU0FollowLine
+3	37	319	#line 37 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	319		strcat __strbufFollowLine, __strretvalFollowLine
+3	38	323	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	323		acquire __TextOutMutex
+3	38	324	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	324		mov __TextOutArgs.Location.X, __signed_stack_001FollowLine
+3	38	326	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	326		mov __TextOutArgs.Location.Y, __signed_stack_002FollowLine
+3	38	328	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	328		set __TextOutArgs.Options, 0
+3	38	331	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	331		mov __TextOutArgs.Text, __strbufFollowLine
+3	38	333	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	333		syscall 13, __TextOutArgs
+3	38	336	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	336		mov __D0FollowLine, __TextOutArgs.Result
+3	38	338	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	338		release __TextOutMutex
+3	38	339	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	339	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	339		set __signed_stack_001FollowLine, 0
+3	38	342	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	342	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	342		set __signed_stack_002FollowLine, 48
+3	38	345	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	38	345	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	345		mov __D0FollowLine, __FollowLine_7qG2_sound_7qG2_001
+3	38	347	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	347		numtostr __strretvalFollowLine, __D0FollowLine
+3	38	350	#line 38 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	350		strcat __strbufFollowLine, __strretvalFollowLine
+3	39	354	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	354		acquire __TextOutMutex
+3	39	355	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	355		mov __TextOutArgs.Location.X, __signed_stack_001FollowLine
+3	39	357	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	357		mov __TextOutArgs.Location.Y, __signed_stack_002FollowLine
+3	39	359	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	359		set __TextOutArgs.Options, 0
+3	39	362	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	362		mov __TextOutArgs.Text, __strbufFollowLine
+3	39	364	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	364		syscall 13, __TextOutArgs
+3	39	367	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	367		mov __D0FollowLine, __TextOutArgs.Result
+3	39	369	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	369		release __TextOutMutex
+3	39	370	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	39	370	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	40	370		set __Wait_7qG2_ms_7qG2_000_inline_FollowLine, 100
+3	39	373	#line 39 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	8551	373	#line 8551 "NXCDefs.h"
+3	8552	373		waitv __Wait_7qG2_ms_7qG2_000_inline_FollowLine
+3	8551	375	#line 8551 "NXCDefs.h"
+3	40	375	#line 40 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	41	375	#line 41 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	42	375		jmp __ASM_Label_624
+3	41	377	#line 41 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	42	377	#line 42 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	43	377		subret __FollowLine_return
+3	42	379	#line 42 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	44	379	#line 44 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+3	45	379		subret __FollowLine_return
+4	56	0	#line 56 "D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc"
+4	57	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc
+1	__ResetSensorSubroutine	81	NXTDefs.h
+2	__ReadLSBytes1	94	NXTDefs.h
+3	FollowLine	179	D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc
+4	__initialize_global_data	560	D:\lego_nxt_nxc_slam_robot\src\nxt_slam\nxt\slam_robot.nxc

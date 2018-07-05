@@ -55,7 +55,7 @@ def SendOdoTransform(pose):
 
 
 def SendStatictransform():
-    br.sendTransform((0.1, 0.1, 0),
+    br.sendTransform((0.08, 0.0, 0.073),
                  tf.transformations.quaternion_from_euler(0, 0, 0),
                  rospy.Time.now(),
                  'base_laser',
