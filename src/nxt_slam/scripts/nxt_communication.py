@@ -82,8 +82,8 @@ def SendScan(sequence, distance_meter):
 
 
 def SpinAround(motor_a, motor_c):
-    motor_a.update(60, 360, braking=True)
-    motor_c.update(60, 360, braking=True)
+    motor_c.run(20)
+    motor_a.run(17)
 
 
 def main():
@@ -93,7 +93,7 @@ def main():
 
     motor_a, motor_c, ultrasonic = ConnectToNxt()
 
-    # SpinAround(motor_a, motor_c)
+    SpinAround(motor_a, motor_c)
 
     sequence = 1
     while not rospy.is_shutdown():
@@ -107,6 +107,8 @@ def main():
 
         if (measurement < 255.0):
             SendScan(sequence, measurement)
+
+        SpinAround(motor_a, motor_c)
 
         sequence += 1
         rate.sleep()
