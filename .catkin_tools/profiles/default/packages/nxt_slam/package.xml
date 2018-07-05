@@ -1,0 +1,20 @@
+<package format="2">
+  <name>nxt_slam</name>
+  <version>0.0.1</version>
+  <description>
+    SLAM with NXT.
+  </description>
+  <maintainer email="moeckersascha@hotmail.com">Sascha Moecker</maintainer>
+  <license>MIT</license>
+
+  <author>Sascha Moecker</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>std_msgs</depend>
+
+  <build_depend>message_generation</build_depend>
+
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>rospy</exec_depend>
+</package>

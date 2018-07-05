@@ -11,9 +11,9 @@
     <param name="temporalUpdate" value="1.0"/>
   </node>
 
-  <node name="slam_visu" pkg="rviz" type="rviz" output="screen" args="-d /home/samo/lego/lego_nxt_nxc_slam_robot/slam.rviz">
+  <node name="nxt_slam_rviz" pkg="rviz" type="rviz" output="screen" args="-d $(find nxt_slam)/rviz/nxt_slam.rviz">
   </node>
 
-  <!-- node pkg="slam" name="slam" type="slam.py" output="screen" / --> 
+  <node name="nxt_slam_communication" pkg="nxt_slam" type="publisher.py" />
 
 </launch>

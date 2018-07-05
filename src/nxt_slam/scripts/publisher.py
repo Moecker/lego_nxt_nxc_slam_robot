@@ -37,7 +37,7 @@ def talker():
         scan.ranges = [4.0, 4.0, 4.0]
         scan.intensities = [0.1, 0.1, 0.1]
 
-        rospy.loginfo(scan)
+        rospy.logdebug(scan)
         pub.publish(scan)
         sequence += 1
         rate.sleep()
