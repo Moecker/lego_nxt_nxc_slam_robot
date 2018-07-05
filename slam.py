@@ -14,8 +14,14 @@ motor_a = Motor(brick, PORT_A)
 motor_c = Motor(brick, PORT_C)
 ultrasonic = Ultrasonic(brick, PORT_2)
 
-while(True):
-    print('Motor A Tacho: ' + str(motor_a.get_tacho()))
-    print('Motor C Tacho: ' + str(motor_c.get_tacho()))
-    print('Ultrasonic: ' + str(Ultrasonic(brick, PORT_2).get_sample()))
-    time.sleep(0.2)
+
+def CommunicateWithRobot():
+    while(True):
+        print('Motor A Tacho: ' + str(motor_a.get_tacho()))
+        print('Motor C Tacho: ' + str(motor_c.get_tacho()))
+        print('Ultrasonic: ' + str(Ultrasonic(brick, PORT_2).get_sample()))
+        time.sleep(0.2)
+
+
+if __name__ == '__main__':
+    CommunicateWithRobot()
