@@ -9,6 +9,14 @@ kPi = 3.14159265359
 kAxisDistance = 0.113
 
 
+class Robot:
+    def __init__(self, tacho_left=0.0, tacho_right=0.0):
+        self.pose = Pose()
+        self.tacho_right = tacho_right
+        self.tacho_left = tacho_left
+        self.theta = 0.0
+
+
 class Pose:
     def __init__(self, x=0.0, y=0.0, theta=0.0):
         self.x = x
@@ -20,20 +28,21 @@ def ComputeDistance(tacho):
     return (tacho / kTicksPerTurn) * (2 * kPi * kRadius)
 
 
-def ComputePoseByTacho(pose, tacho_left, tacho_right):
-    distance_left = ComputeDistance(tacho_left)
+def ComputePoseByTacho(pose, tacho_right, tacho_left):
     distance_right = ComputeDistance(tacho_right)
+    distance_left = ComputeDistance(tacho_left)
     distance_center = (distance_left + distance_right) / 2
 
     heading = (distance_right - distance_left) / kAxisDistance
 
-    print("distance_left: " + str(distance_left))
     print("distance_right: " + str(distance_right))
+    print("distance_left: " + str(distance_left))
+
     print("distance_center: " + str(distance_center))
     print("heading: " + str(heading))
 
-    x = pose.x - (distance_center * math.sin(heading))
-    y = pose.y + (distance_center * math.cos(heading))
+    x = pose.x - (distance_center * math.cos(heading))
+    y = pose.y + (distance_center * math.sin(heading))
     theta = pose.theta + heading
 
     return Pose(x, y, theta)

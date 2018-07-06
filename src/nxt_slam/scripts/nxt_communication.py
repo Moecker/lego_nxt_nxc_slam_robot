@@ -11,7 +11,7 @@ import nxt.bluesock
 
 from nxt.sensor import UltrasonicSensor, PORT_2
 from nxt.motor import Motor, PORT_A, PORT_B, PORT_C
-from odometry import Pose, ComputePoseByTacho
+from odometry import Robot, Pose, ComputePoseByTacho
 
 br = tf.TransformBroadcaster()
 pub = rospy.Publisher('scan', LaserScan, queue_size=10)
@@ -20,23 +20,23 @@ pub = rospy.Publisher('scan', LaserScan, queue_size=10)
 def ConnectToNxt():
     brick = nxt.bluesock.BlueSock('00:16:53:04:17:F1').connect()
 
-    motor_a = Motor(brick, PORT_A)
-    motor_c = Motor(brick, PORT_C)
+    motor_right = Motor(brick, PORT_A)
+    motor_left = Motor(brick, PORT_C)
     ultrasonic = UltrasonicSensor(brick, PORT_2)
 
-    return motor_a, motor_c, ultrasonic
+    return motor_right, motor_left, ultrasonic
 
 
-def GetOdometry(motor_a, motor_c):
-    motor_state_a = motor_a.get_output_state()
-    motor_state_c = motor_c.get_output_state()
-    tacho_motor_a = motor_state_a[7]
-    tacho_motor_c = motor_state_c[7]
+def GetOdometry(motor_right, motor_left):
+    motor_state_a = motor_right.get_output_state()
+    motor_state_c = motor_left.get_output_state()
+    tacho_motor_right = motor_state_a[7]
+    tacho_motor_left = motor_state_c[7]
     rospy.loginfo('Motor A State: ' + str(motor_state_a))
     rospy.loginfo('Motor C State: ' + str(motor_state_c))
-    rospy.loginfo('Motor A Tacho: ' + str(tacho_motor_a))
-    rospy.loginfo('Motor C Tacho: ' + str(tacho_motor_c))
-    return tacho_motor_a, tacho_motor_c
+    rospy.loginfo('Motor A Tacho: ' + str(tacho_motor_right))
+    rospy.loginfo('Motor C Tacho: ' + str(tacho_motor_left))
+    return tacho_motor_right, tacho_motor_left
 
 
 def GetUltrasonic(ultrasonic):
@@ -74,41 +74,46 @@ def SendScan(sequence, distance_meter):
     scan.angle_max = 0.01
     scan.angle_increment = 0.02
     scan.range_max = 2.54
-    scan.ranges = [distance, distance, distance]
+    scan.ranges = [distance, distance]
     scan.intensities = [0.5, 0.5]
 
     rospy.loginfo(scan)
     pub.publish(scan)
 
 
-def SpinAround(motor_a, motor_c):
-    motor_c.run(20)
-    motor_a.run(17)
+def SpinAround(motor_right, motor_left):
+    motor_left.run(20)
+    motor_right.run(10)
 
 
 def main():
     rospy.init_node('nxt_communication', anonymous=True)
     rate = rospy.Rate(10)
-    pose = Pose()
 
-    motor_a, motor_c, ultrasonic = ConnectToNxt()
+    motor_right, motor_left, ultrasonic = ConnectToNxt()
 
-    SpinAround(motor_a, motor_c)
+    tacho_motor_right, tacho_motor_left = GetOdometry(motor_right, motor_left)
+    robot = Robot(tacho_motor_right, tacho_motor_left)
+
+    SpinAround(motor_right, motor_left)
 
     sequence = 1
     while not rospy.is_shutdown():
-        tacho_motor_a, tacho_motor_c = GetOdometry(motor_a, motor_c)
+        tacho_motor_right, tacho_motor_left = GetOdometry(motor_right, motor_left)
         measurement = GetUltrasonic(ultrasonic)
 
-        pose = ComputePoseByTacho(Pose(), tacho_motor_a, tacho_motor_c)
+        tacho_right_diff = robot.tacho_right - tacho_motor_right
+        tacho_left_diff = robot.tacho_left - tacho_motor_left
+
+        robot.tacho_right = tacho_motor_right
+        robot.tacho_left = tacho_motor_left
+        robot.pose = ComputePoseByTacho(robot.pose, tacho_right_diff, tacho_left_diff)
 
         SendStatictransform()
-        SendOdoTransform(pose)
+        SendOdoTransform(robot.pose)
 
         if (measurement < 255.0):
             SendScan(sequence, measurement)
-
-        SpinAround(motor_a, motor_c)
 
         sequence += 1
         rate.sleep()
