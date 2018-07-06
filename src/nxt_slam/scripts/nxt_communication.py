@@ -16,6 +16,10 @@ from odometry import Robot, Pose, ComputePoseByTacho
 br = tf.TransformBroadcaster()
 pub = rospy.Publisher('scan', LaserScan, queue_size=10)
 
+kAngleMax = 0.5
+kNumberOfScans = 20
+kSpeed = 20
+
 
 def ConnectToNxt():
     brick = nxt.bluesock.BlueSock('00:16:53:04:17:F1').connect()
@@ -55,35 +59,51 @@ def SendOdoTransform(pose):
 
 
 def SendStatictransform():
-    br.sendTransform((0.08, 0.0, 0.073),
+    # br.sendTransform((0.08, 0.0, 0.073),
+    br.sendTransform((0.0, 0.0, 0.0),
                  tf.transformations.quaternion_from_euler(0, 0, 0),
                  rospy.Time.now(),
                  'base_laser',
                  'base_link')
 
 
-def SendScan(sequence, distance_meter):
+def PrepareScan(sequence):
     scan = LaserScan()
-
-    distance = distance_meter / 100.0
-
     scan.header.seq = sequence
     scan.header.stamp = rospy.get_rostime()
     scan.header.frame_id = 'base_laser'
-    scan.angle_min = -0.01
-    scan.angle_max = 0.01
-    scan.angle_increment = 0.02
+    scan.angle_min = -kAngleMax
+    scan.angle_max = kAngleMax
+    scan.angle_increment = (2 * kAngleMax) / kNumberOfScans
     scan.range_max = 2.54
-    scan.ranges = [distance, distance]
-    scan.intensities = [0.5, 0.5]
+    return scan
+
+
+def SendScan(sequence, distance_meter):
+    scan = PrepareScan(sequence)
+
+    distance = distance_meter / 100.0
+
+    ranges = range(-1 * (kNumberOfScans / 2), (kNumberOfScans / 2) + 1)
+    scan.ranges = [distance for i in ranges if i != 0]
+    scan.intensities = [abs(1/float(i)) for i in ranges if i != 0]
 
     rospy.loginfo(scan)
     pub.publish(scan)
 
 
-def SpinAround(motor_right, motor_left):
-    motor_left.run(20)
-    motor_right.run(10)
+def SpinAround(motor_right, motor_left, speed_right, speed_left):
+    motor_right.run(speed_right)
+    motor_left.run(speed_left)
+
+
+def UpdateMotorTacho(robot, tacho_motor_right, tacho_motor_left):
+    tacho_right_diff = robot.tacho_right - tacho_motor_right
+    tacho_left_diff = robot.tacho_left - tacho_motor_left
+
+    robot.tacho_right = tacho_motor_right
+    robot.tacho_left = tacho_motor_left
+    return robot, tacho_right_diff, tacho_left_diff
 
 
 def main():
@@ -95,25 +115,26 @@ def main():
     tacho_motor_right, tacho_motor_left = GetOdometry(motor_right, motor_left)
     robot = Robot(tacho_motor_right, tacho_motor_left)
 
-    SpinAround(motor_right, motor_left)
-
     sequence = 1
     while not rospy.is_shutdown():
         tacho_motor_right, tacho_motor_left = GetOdometry(motor_right, motor_left)
         measurement = GetUltrasonic(ultrasonic)
 
-        tacho_right_diff = robot.tacho_right - tacho_motor_right
-        tacho_left_diff = robot.tacho_left - tacho_motor_left
-
-        robot.tacho_right = tacho_motor_right
-        robot.tacho_left = tacho_motor_left
+        robot, tacho_right_diff, tacho_left_diff = UpdateMotorTacho(robot, tacho_motor_right, tacho_motor_left)
         robot.pose = ComputePoseByTacho(robot.pose, tacho_right_diff, tacho_left_diff)
 
         SendStatictransform()
         SendOdoTransform(robot.pose)
 
-        if (measurement < 255.0):
+        if (measurement < 255):
             SendScan(sequence, measurement)
+
+        speed_right = kSpeed
+        speed_left = kSpeed
+        if (measurement < 50):
+            speed_right = -kSpeed
+
+        SpinAround(motor_right, motor_left, speed_right, speed_left)
 
         sequence += 1
         rate.sleep()
