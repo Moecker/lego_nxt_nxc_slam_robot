@@ -1,6 +1,4 @@
 nxt_slam
-/home/samo/lego/lego_nxt_nxc_slam_robot/devel/.private/nxt_slam/share/Project/cmake/Project-msg-paths.cmake /home/samo/lego/lego_nxt_nxc_slam_robot/devel/share/Project/cmake/Project-msg-paths.cmake
 /home/samo/lego/lego_nxt_nxc_slam_robot/devel/.private/nxt_slam/share/nxt_slam/cmake/nxt_slamConfig.cmake /home/samo/lego/lego_nxt_nxc_slam_robot/devel/share/nxt_slam/cmake/nxt_slamConfig.cmake
 /home/samo/lego/lego_nxt_nxc_slam_robot/devel/.private/nxt_slam/share/nxt_slam/cmake/nxt_slamConfig-version.cmake /home/samo/lego/lego_nxt_nxc_slam_robot/devel/share/nxt_slam/cmake/nxt_slamConfig-version.cmake
-/home/samo/lego/lego_nxt_nxc_slam_robot/devel/.private/nxt_slam/lib/python2.7/dist-packages/Project/__init__.py /home/samo/lego/lego_nxt_nxc_slam_robot/devel/lib/python2.7/dist-packages/Project/__init__.py
 /home/samo/lego/lego_nxt_nxc_slam_robot/devel/.private/nxt_slam/lib/pkgconfig/nxt_slam.pc /home/samo/lego/lego_nxt_nxc_slam_robot/devel/lib/pkgconfig/nxt_slam.pc
